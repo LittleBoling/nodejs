@@ -5,7 +5,7 @@
 var argvs = process.argv.slice(2);
 //console.log(argvs.toString());
 
-switch(argvs[0])
+/* switch(argvs[0])
 {
     case'init':
         console.log('你需要INIT');
@@ -17,4 +17,11 @@ switch(argvs[0])
     case 'uninstall':
         console.log('uninstall');
     break;
-}
+} */
+
+
+//模板字符串
+var message = 'hello'
+
+process.stdout.write(`${message} world`);
+
