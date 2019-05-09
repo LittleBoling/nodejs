@@ -7,3 +7,5 @@ http.createServer(function(request,response){
     response.write("Hello World!");
     response.end();
 }).listen(8888);
+
+console.log("请在浏览器中打开127.0.0.1：8888....");
