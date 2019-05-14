@@ -1,4 +1,4 @@
-//事件驱动简介
+///////////////////////////////////////////////////////////////////////事件驱动简介
 
 /* setInterval(function(){
     console.log(1);
@@ -20,9 +20,9 @@ process.on('SIGINT',()=>{
     }
 }) */
 
-//Input from keyboard
+//////////////////////////////////////////////////////////////////Input from keyboard
 
-var question = 'Please input the user name: ';
+/* var question = 'Please input the user name: ';
 var users = {
     'admin':'123',
     'user' :'321'
@@ -62,5 +62,14 @@ process.stdin.on('data',(input)=>{
             process.stdout.write('Please input the password:\n');
         }
     }
-});
+}); */
 
+console.time('main');
+
+setTimeout(()=>{
+    for(var i = 0;i<100000000;i++){}
+    console.log('Circling');
+},0);
+
+console.timeEnd('main');
+console.log('Program end');
